@@ -1,0 +1,340 @@
+/* En este archivo se encontraá tolo lo referente al diseño.*/
+/*
+* COLORES: 
+*     PRIMARIO:
+*                 #0927EB;  -> azul fuerte
+*
+*     SECUNDARIO: #fff      -> blanco
+*                 #40e0d0   -> turquesa
+*                 #000000   -> black
+*                 #696969   -> dimgray
+* FUENTES:
+*      ENCABEZADOS: SPACE MONO
+*      TEXTO: ROBOTO
+*/
+/*FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1vh;
+}
+/* Estilos Para la barra de navegacion*/
+.navega{
+    background-color: black;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 1;
+}
+.navega h4{
+    float: left;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    color: white;
+    text-transform:uppercase ;
+    margin-top: 9px;
+    margin-left: 25px;
+}
+.navega a{
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: azure;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.navega a:hover{
+    background-color: dimgray;
+}
+.derecho{
+    float:right ;
+}
+.izquierdo{
+    float: left;
+}
+.activo{
+    background-color: #0927EB;
+    float:left !important;
+}
+
+/* Estilos para el CV */
+.contenedor-gral{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1200px;
+    background: wheat;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+}
+.contenedor-gral .cont-izq{
+    position: relative;
+    background: #0927EB;
+    padding: 40px;
+}
+.contenedor-gral .cont-der{
+    position: relative;
+    background: #ffffff;
+    padding: 40px;
+}
+
+.formato-izq{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.perfil .imagen{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil .imagen img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.perfil h1{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.35em;
+   
+}
+.perfil h1 span{
+    font-size: 0.8em;
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+}
+
+.titulo{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+
+.contacto ul{
+    position: relative;
+}
+.contacto ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contacto ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: turquoise;
+}  
+.contacto ul li span{
+    color: white;
+    font-weight: 300;
+}
+.formacion{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.formacion h5{
+    color: turquoise;
+    font-weight: 600;
+}
+.formacion h4:nth-child(odd){
+    font-family: 'Space Mono', monospace;
+    font-size: 88%;
+    color: turquoise;
+    font-weight: 600;
+}
+.formacion h4{
+    color:white;
+    font-weight: 200;
+}
+
+.idiomas .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: black;
+    display: block;
+    margin-top: 4px;
+}
+.idiomas .porcentaje div{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    background: #3ee0cf;
+}
+.bio{
+    margin-bottom: 40px;
+}
+.titulo2{
+    color: #0927EB;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+}
+.bio p{
+    color: #696969;
+    margin-top: 3px;
+    font-size: 0.94rem;
+}
+.bio .caja{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.texto_azul{
+    min-width: 150px;
+}
+.texto_azul h5{
+    font-family:'Space Mono', monospace;
+    color: black;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 0.8em;
+}
+
+.exp_lab h4{
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    color: #0927EB;
+    font-size: 1em;
+}
+
+.habilidades .caja{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades .caja h4{
+    font-family: 'Space Mono', monospace;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.habilidades .caja .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: lightslategray;
+}
+
+.habilidades .caja .porcentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: turquoise;
+}
+.intereses ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.intereses ul li{
+    list-style: none;
+    color: black;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.intereses ul li .fa{
+    color: #0927EB;
+    font-size: 18px;
+    width: 20px;
+}
+.intereses ul li{
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+}
+.referencias ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.referencias h5{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.referencias h4{
+    color: dimgray;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 940px){
+    .intereses ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .referencias ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 800px) {
+    .contenedor-gral{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .intereses ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .bio .caja{
+        flex-direction: column;
+    }
+    .texto_azul{
+        margin-bottom: 5px;
+    }
+    .intereses ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .habilidades .caja{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* Barra de navegacion
+    .navega a{
+        float: none;
+        display: block;
+    }
+    */
+}
