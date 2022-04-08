@@ -309,7 +309,8 @@ body{
 
 .contenedor-certificados{
     width: 85%;
-    padding: 25px 0px;
+    max-width: 1000px;
+    padding: 55px 0px;
 }
 
 .column {
@@ -370,8 +371,8 @@ body{
 
   /*Proyectos*/
   .proyectos{
-      width: 85%;
-      padding-top: 25px;
+      max-width: 1000px;
+      padding-top: 35px;
   }
   .proyectos h4{
       color: black;
@@ -398,14 +399,14 @@ body{
   .contenedor-proyectos{
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       padding: 25px 0px;
   }
   .tarjeta{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
     transition: 0.3s;
     width: 35%;
-    border-radius: 10px;
+    border-radius: 15px;
   }
   .tarjeta:hover{
     box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
@@ -415,6 +416,7 @@ body{
   }
   .tarjeta img{
       width: 100%;
+      border-radius: 15px 15px 0 0;
   }
 
 @media (max-width: 940px){
@@ -434,6 +436,9 @@ body{
     }
     .intereses ul{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .column{
+        width: 50%;
     }
 }
 
@@ -455,13 +460,13 @@ body{
         width: 65%;
     }
     .contenedor-certificados{
-        padding-top: 70px;
+        padding-top: 100px;
     }
 
     .contenedor-proyectos{
         flex-direction: column ;
         align-content: center;
-        gap: 15px;
+        gap: 30px;
     }
 
     /* Barra de navegacion
