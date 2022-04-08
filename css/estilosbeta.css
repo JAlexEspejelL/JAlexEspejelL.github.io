@@ -451,6 +451,19 @@ body{
         grid-template-columns: repeat(1,1fr);
     }
 
+    .tarjeta{
+        width: 65%;
+    }
+    .contenedor-certificados{
+        padding-top: 70px;
+    }
+
+    .contenedor-proyectos{
+        flex-direction: column ;
+        align-content: center;
+        gap: 15px;
+    }
+
     /* Barra de navegacion
     .navega a{
         float: none;
