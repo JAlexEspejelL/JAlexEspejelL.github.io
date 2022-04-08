@@ -25,10 +25,9 @@
 
 body{
     background: lightgray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 1vh;
+    display: grid;
+   place-items: center;
+   width: auto;
 }
 /* Estilos Para la barra de navegacion*/
 .navega{
@@ -296,6 +295,127 @@ body{
     color: dimgray;
     font-size: 0.9rem;
 }
+
+/* seccion de certificados*/
+.titulo3{
+    text-align: center;
+    color: #0927EB;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+.contenedor-certificados{
+    width: 85%;
+    padding: 25px 0px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    color: #0927EB;
+    font-size: 0.9em;
+  }
+  
+  #imgPrincipal{
+      width: 100%;
+      box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+  }
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+
+  /*Proyectos*/
+  .proyectos{
+      width: 85%;
+      padding-top: 25px;
+  }
+  .proyectos h4{
+      color: black;
+      text-align: center;
+      font-size: 1rem;
+      padding-top: 15px;
+  }
+  .proyectos a:link {
+    color: #696969;
+    text-decoration: none;
+  }
+  
+  .proyectos a:visited {
+    color: #0927EB;
+  }
+  
+  .proyectos a:hover {
+    color: #3ee0cf;
+  }
+  
+  .proyectos a:active {
+    color: lightcoral;
+  }
+  .contenedor-proyectos{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      padding: 25px 0px;
+  }
+  .tarjeta{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+    transition: 0.3s;
+    width: 35%;
+    border-radius: 10px;
+  }
+  .tarjeta:hover{
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+  }
+  .tarjeta-texto{
+      padding: 2px 16px;
+  }
+  .tarjeta img{
+      width: 100%;
+  }
 
 @media (max-width: 940px){
     .intereses ul{
